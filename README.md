@@ -32,6 +32,11 @@ pip install torch-tools
 pip install visdom
 python setup.py install
 ```
+## Notes for arm64 OSX
+export ARCHFLAGS=-arch arm64
+export MACOSX_DEPLOYMENT_TARGET=$(uname -r | cut -c1-2) 
+arch -arm64 python setup.py install
+
 # Install using poetry
 
 ## prerequisite
